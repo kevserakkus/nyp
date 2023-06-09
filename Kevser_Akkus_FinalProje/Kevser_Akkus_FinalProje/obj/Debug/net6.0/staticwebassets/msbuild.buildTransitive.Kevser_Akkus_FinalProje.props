@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Kevser_Akkus_FinalProje.props" />
+</Project>

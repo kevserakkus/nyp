@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Kevser_Akkus_FinalProje.props" />
+</Project>

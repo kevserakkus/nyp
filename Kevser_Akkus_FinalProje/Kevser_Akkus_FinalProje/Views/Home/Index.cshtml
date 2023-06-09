@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .value {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Home Page</h1>
+
+        <p><u>Kullanıcı Adı</u></p>
+        <div class="value">
+            @ViewBag.username
+        </div>
+
+        <p><u>Şifre</u></p>
+        <div class="value">
+            @ViewBag.usersifre
+        </div>
+
+        <p><u>İsim Soyisim</u></p>
+        <div class="value">
+            @ViewBag.AdSoyad
+        </div>
+
+        <p><u>Oluşturulma Tarihi</u></p>
+        <div class="value">
+            @ViewBag.CreateAt
+        </div>
+
+        <p><u>Rol</u></p>
+        <div class="value">
+            @ViewBag.rol
+        </div>
+    </div>
+</body>
+</html>
+

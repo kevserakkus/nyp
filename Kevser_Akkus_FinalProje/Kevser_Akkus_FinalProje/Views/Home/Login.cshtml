@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <style>
+        /* Form stil */
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* İnput alanları stil */
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Buton stil */
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            /* Butona hover stilini eklemek için */
+            button[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+        /* Login başlık stil */
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+
+    <div>
+        <form method="post" action="/Home/Login">
+            <div>isim</div>
+            <input type="text" name="isim" />
+            <div>şifre</div>
+            <input type="text" name="sifre" />
+            <br>
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
